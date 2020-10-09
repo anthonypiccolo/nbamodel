@@ -1,0 +1,22 @@
+{
+  "name": "nbamodel",
+  "version": "0.0.1",
+  "description": "NBA Betting Model",
+  "main": "index.js",
+  "authors": {
+    "name": "Anthony Piccolo",
+    "email": ""
+  },
+  "repository": "/nbamodel",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
