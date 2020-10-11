@@ -31,7 +31,7 @@ export default {
   },
   created() {
     // Simple GET request using axios
-    axios.get("https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot.com/o/data.json?alt=media&token=79253355-fbeb-4939-8686-c1a30bcb791c")
+    axios.get("https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot.com/o/data.json?alt=media&token=a14b67ec-d567-4179-8df2-207dddf3d505")
       .then(response => this.items = response.data);
 
   }
