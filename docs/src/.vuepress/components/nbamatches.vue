@@ -8,7 +8,7 @@
   <tr v-for="i in items" style="text-align:center;margin: 30px">
     <td style="padding:5px 70px">{{i.Home_Neutral}}</td>
     <td style="padding:5px 70px">{{i.Visitor_Neutral}}</td>
-    <td style="padding:5px 70px">{{i.ATS}}</td>
+    <td style="padding:5px 70px">{{i.ATS.toFixed(2)}}</td>
   </tr>
 </table>
 </template>
