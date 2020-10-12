@@ -31,8 +31,13 @@ export default {
   },
   created() {
     // Simple GET request using axios
-    axios.get("https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot.com/o/data.json?alt=media&token=a14b67ec-d567-4179-8df2-207dddf3d505")
-      .then(response => this.items = response.data);
+const url = 'https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot.com/o/data.json?alt=media&token=a14b67ec-d567-4179-8df2-207dddf3d505'
+axios.get(url, {
+    responseType: 'text',
+    transformResponse: data => data,
+}).then(res => {
+    this.items = response.data.split('\n').filter(Boolean).map(item => JSON.parse(item))
+});
 
   }
 }
