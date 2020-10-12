@@ -35,7 +35,7 @@ const url = 'https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot
 axios.get(url, {
     responseType: 'text',
     transformResponse: data => data,
-}).then(res -> {
+}).then(response => {
     this.items = response.data.split('\n').filter(Boolean).map(item => JSON.parse(item))
 });
 
