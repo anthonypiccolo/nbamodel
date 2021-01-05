@@ -31,7 +31,7 @@ export default {
   },
   created() {
     // Simple GET request using axios
-const url = 'https://firebasestorage.googleapis.com/v0/b/nbamodel-223111.appspot.com/o/data.json?alt=media&token=a14b67ec-d567-4179-8df2-207dddf3d505'
+const url = 'https://storage.googleapis.com/nbamodel-223111.appspot.com/data.json'
 axios.get(url, {
     responseType: 'text',
     transformResponse: data => data,
